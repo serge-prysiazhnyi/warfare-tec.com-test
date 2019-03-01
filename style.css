@@ -1,0 +1,15 @@
+table {
+    width: 100%;
+    text-align: center;
+}
+th {
+    color: white;
+    background-color: #307399;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+tbody tr:hover {
+    color: white;
+    background-color: #307399;
+}

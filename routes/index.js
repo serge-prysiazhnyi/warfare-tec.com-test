@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const data = require('../data/generateList')(10000)
+
 /* GET home page. */
 
 const filterResults = (query) => {

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper container">
+        <table id="table">
+            <thead>
+                <tr>
+                    <td></td>
+                    <td><input class="form-control" type="search" name="filter"></td>
+                    <td><button id="search-btn" class="btn btn-primary">Search</button></td>
+                </tr>
+                <tr>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>email</th>
+                    <th>funds</th>
+                    <th>city</th>
+                    <th>phone</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div class="pagination d-flex justify-content-between pt-3">
+            <button type="button" class="prev btn btn-secondary"><<< Prev</button>
+                <span class="pagenumber">1</span>
+            <button type="button" class="next btn btn-secondary">Next >>></button>
+        </div>
+        <hr>
+        <div class="input-group input-group-sm mb-3">
+            <label class="px-1" for="id">ID</label>
+            <input class="form-control" type="number" name="" id="id">
+            <label class="px-1" for="name">Name</label>
+            <input class="form-control" type="text" name="" id="name">
+            <label class="px-1" for="email">email</label>
+            <input class="form-control" type="email" name="" id="email">
+            <label class="px-1" for="funds">Funds</label>
+            <input class="form-control" type="number" name="" id="funds">
+            <label class="px-1" for="city">City</label>
+            <input class="form-control" type="text" name="" id="city">
+            <label class="px-1" for="phone">Phone</label>
+            <input class="form-control" type="text" name="" id="phone">
+        </div>
+        <button id="sendRequest" class="next btn btn-danger">Send</button>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
